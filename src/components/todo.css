@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+body {
+  overflow-x: hidden;
+}
+
+.main-body {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #212121;
+  position: relative;
+}
+
+.main-body .contents {
+  position: absolute;
+  top: 20vh;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-body .contents .header-image {
+  width: 100px;
+  margin-bottom: 3em;
+}
+
+.main-body .contents .header-image img {
+  width: 100%;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.main-body .contents .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main-body .contents .input input {
+  width: 500px;
+  height: 50px;
+  position: relative;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  padding: 0 2em;
+  font-family: 'Rubik', sans-serif;
+}
+
+.main-body .contents .input i {
+  position: absolute;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.main-body .contents .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50px;
+  width: 500px;
+  background: #FFEB3B;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  font-family: 'Rubik', sans-serif;
+  margin-top: 40px;
+}
+
+.main-body .contents .item .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: 100%;
+  background: #FFEB3B;
+  -webkit-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.main-body .contents .item h3 {
+  padding: 0 2em;
+}
+
+.main-body .contents .item .icon {
+  width: 20%;
+  background: #FFEB3B;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transition: 350ms ease-out;
+  transition: 350ms ease-out;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+
+.main-body .contents .item .icon:hover {
+  background: #F44336;
+  -webkit-transition: 250ms ease-in;
+  transition: 250ms ease-in;
+  border-top-left-radius: 40px;
+}
+
+.main-body .contents .item i {
+  cursor: pointer;
+  margin-right: 1em;
+}
+
+.main-body .contents .title:hover {
+  background: #0288D1;
+  -webkit-transition: 250ms ease-in;
+  transition: 250ms ease-in;
+  border-top-right-radius: 50px;
+  color: white;
+}
+
+.main-body .contents button {
+  background: red;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  padding: 1em 3em;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  margin-top: 5em;
+}
+
+@media (max-width: 1000px) {
+  input {
+    width: 340px !important;
+  }
+  .item {
+    width: 340px !important;
+  }
+}
+/*# sourceMappingURL=todo.css.map */
